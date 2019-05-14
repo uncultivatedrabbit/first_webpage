@@ -1,0 +1,12 @@
+body{
+  background-color: black;
+}
+
+#rick-roll {
+  position: fixed;
+  right: 0;
+  top: 66px;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}

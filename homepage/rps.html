@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Rock, Paper, Scissors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="rps.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+  <link rel="icon" width="15" height="15" type="image/ico" href="../homepage/images/rgb.png" />
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body style="background-color: #dcdde1">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-between" style="background-color: #718093;">
+    <a class="navbar-brand" href="#">
+        <img src="images\skull-icon.png" width="40" height="40" alt="skull-icon">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html" target="_blank">[Home]</a>
+                </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="rps.html">[Rock, Paper, Scissors]<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">[To-Do List]</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="timer\timer.html" target="_blank">[How Long Have I Been Coding?]</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.brandonmelendezpoet.com" target="_blank">[About Me]</a>
+              </li>
+           <form action = "https://www.google.com/search" method = "get" target="_blank" autocomplete="off">
+              <div class="search-box">
+                  <input class= "search-txt" type="text" name="q" placeholder="search">
+                  <button class="search-btn" type = "submit" >
+                      <i class="fas fa-search"></i>
+                  </button>
+              </div>
+            </form>
+          
+  </nav>
+
+  
+
+  <div class="jumbotron jumbotron-fluid">
+      <h1 class="text-uppercase text-center play">Time to Play</h1>
+      <h1 class="text-uppercase text-center">
+        <span style="display:none"id="rock">Rock,</span>
+        <span style="display:none" id="paper">Paper,</span> 
+        <span style="display:none" id="scissors">Scissors</span></h1>
+
+
+  </div>
+    
+
+ <div class='container'>
+    <div class ='row justify-content-center'>
+      <div class='col-auto'>
+          <button  type="button" name="rock" value="rock" class="btn btn-lg btn-outline-dark"><i class="fas fa-hand-rock"></i></button>
+      </div>
+      <div class='col-auto'>
+          <button  type="button" name="paper" value="paper" class="btn btn-lg  btn-outline-dark"><i class="fas fa-hand-paper"></i></button>
+      </div>
+      <div class='col-auto'>
+          <button  type="button" name="scissors" value="scissors" class="btn btn-lg btn-outline-dark"><i class="fas fa-hand-scissors"></i></button>
+      </div>
+        
+  
+    <div class='row justify-content-center'>
+        <div class='col-auto'>
+          <button  type="button" name="secret" value="truj" class="btn btn-lg btn-outline-danger"><i class="fas fa-smile-wink"></i></button>
+        </div>
+        <div class='col-auto'>
+            <button  type="button" name="secret" value="angie" class="btn btn-lg btn-outline-danger"><i class="fas fa-skull"></i></button>
+        </div>
+        <div class='col-auto'>
+            <button type ="button" name="reset" value="reset" id="reset" class="btn btn-lg  btn-outline-secondary"><i class="fas fa-undo"></i></button>
+        </div>
+        
+        
+        
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col">
+              <p id="result">Result:<br><span> </span></p>
+          </div>
+          <div class="w-100"></div>
+          <div class="col">
+            <p id="player-score">Your Score:<br><span> 0</span></p>
+          </div>
+          
+          <div class="col">
+            <p id="computer-score">Computer Score:<br><span> 0</span></p>
+          </div>
+          <div class="col">
+            <p id="winner">Final Winner:<br> <span id = "winner"></span></p>
+          </div>
+        </div>
+      </div>
+ 
+
+    <footer class="footer fixed-bottom" id = "foot">
+
+    </footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="rps.js"></script>
+  
+</body>
+</html>
